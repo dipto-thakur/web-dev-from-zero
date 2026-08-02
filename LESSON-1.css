@@ -1,67 +1,35 @@
 .outer {
-
   position: absolute;
-
   top: 5%;
-
   left: 5%;
-
   border: 5px solid blue;
-
 }
 
 .box {
-
   width: 40px;
-
   height: 40px;
-
   background-color: lightgrey;
-
   float: left;
-
 }
-
 .row {
-
   clear: both;
-
 }
-
 .color1 {
-
   background-color: green;
-
 }
-
 .color2 {
-
   background-color: orange;
-
 }
-
 .color3 {
-
   background-color: white;
-
 }
-
 .color4 {
-
   background-color: brown;
-
 }
-
 .alt{
-
   //background-color:black;
-
   transform: rotate(0deg);
-
 }
-
 .outer:hover .alt{
-
   transform: rotate(45deg);
-
 }
