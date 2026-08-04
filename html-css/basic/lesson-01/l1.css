@@ -1,0 +1,51 @@
+div {
+
+Background-color: purple;
+
+width:50px;
+
+height:50px;
+
+margin:10px;
+
+}
+
+#unit1{
+
+background-color: pink;
+
+width:300px;
+
+height:20px;
+
+} 
+
+#unit2{
+
+background-color: blue;
+
+width: 50px;
+
+height: 200px;
+
+}
+
+#unit3{
+
+Background-color: yellow;
+
+width: 10px;
+
+height: 10px;
+
+}
+
+#unit4{
+
+Background-color: green;
+
+width: 150px;
+
+height: 150px;
+
+}
