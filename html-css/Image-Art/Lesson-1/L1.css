@@ -1,0 +1,85 @@
+.outer{
+
+  width:565px;
+
+  height:565px;
+
+  background-color:#C61F59;
+
+  border-radius:50px;
+
+  padding:25px;
+
+}
+
+img{
+
+  float:left;
+
+  margin:2px;
+
+}
+
+.row{
+
+  clear:both;
+
+}
+
+.imgStyle1{
+
+  filter: blur(2px);
+
+  width:150px;
+
+  height:150px;  
+
+}
+
+.imgStyle2{
+
+  filter: blur(2px);
+
+  width:250px;
+
+  height:150px;
+
+}
+
+.imgStyle3{
+
+  filter: blur(2px);
+
+  width:150px;
+
+  height:250px;
+
+}
+
+.imgStyle4{
+
+  width:250px;
+
+  height:250px;
+
+}
+
+.circle{
+
+  width:552px;
+
+  height:552px;
+
+  border-radius:690px;
+
+  border:6px solid #C61F59;
+
+  position:absolute;
+
+  top:31px;
+
+  left:31px;
+
+  z-index:1;
+
+}
