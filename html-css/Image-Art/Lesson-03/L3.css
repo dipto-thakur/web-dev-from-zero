@@ -1,0 +1,378 @@
+
+.mainOuter{
+
+  position: relative;
+
+  width: 100%;
+
+  height: 100%;
+
+}
+
+.outer{
+
+  position: absolute;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 8px;
+
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.img{
+
+   width: 100%;
+
+   height: 100%;
+
+   object-fit: cover;
+
+   filter: brightness(0.9) contrast(1.1) saturate(1.2);
+
+}
+
+.o1{
+
+  width:100px;
+
+  height:60px;
+
+  top:100px;
+
+  left:230px;
+
+}
+
+.o2{
+
+  width:50px;
+
+  height:100px;
+
+  top:60px;
+
+  left:175px;
+
+}
+
+.o3{
+
+  height:60px;
+
+  width:80px;
+
+  top:100px;
+
+  left:90px;
+
+}
+
+.o4{
+
+  width:100px;
+
+  height:60px;
+
+  top:165px;
+
+  left:75px;
+
+}
+
+.o5{
+
+ width:80px;
+
+  height:70px;
+
+  top:230px;
+
+  left:95px;
+
+}
+
+.o6{
+
+  width:100px;
+
+  height:135px;
+
+  top:165px;
+
+  left:180px;
+
+}
+
+.o7{
+
+  width:100px;
+
+  height:70px;
+
+  top:305px;
+
+  left:180px;
+
+}
+
+.o8{
+
+  width:50px;
+
+  height:50px;
+
+  top:305px;
+
+  left:125px;
+
+}
+
+.o9{
+
+  width:70px;
+
+  height:80px;
+
+  top:165px;
+
+  left:285px;
+
+}
+
+.o10{
+
+  width:50px;
+
+  height:80px;
+
+  top:165px;
+
+  left:360px;
+
+}
+
+ .o11{
+
+  width:50px;
+
+  height:80px;
+
+  top:165px;
+
+  left:415px;
+
+} 
+
+ .o12{
+
+  width:50px;
+
+  height:80px;
+
+  top:165px;
+
+  left:470px;
+
+} 
+
+.o13{
+
+  width:150px;
+
+  height:125px;
+
+  top:250px;
+
+  left:285px;
+
+}
+
+.o14{
+
+  width:80px;
+
+  height:70px;
+
+  top:250px;
+
+  left:440px;
+
+}
+
+.o15{
+
+  width:80px;
+
+  height:90px;
+
+  top:325px;
+
+  left:440px;
+
+}
+
+.o16{
+
+  width:50px;
+
+  height:50px;
+
+  top:380px;
+
+  left:245px;
+
+}
+
+.o17{
+
+  width:80px;
+
+  height:50px;
+
+  top:380px;
+
+  left:300px;
+
+}
+
+.o18{
+
+  width:50px;
+
+  height:50px;
+
+  top:380px;
+
+  left:385px;
+
+}
+
+.o19{
+
+  width:50px;
+
+  height:50px;
+
+  top:435px;
+
+  left:300px;
+
+}
+
+.o20{
+
+  width:50px;
+
+  height:50px;
+
+  top:435px;
+
+  left:356px;
+
+}
+
+.o21{
+
+   width:50px;
+
+  height:50px;
+
+  top:490px;
+
+  left:330px;
+
+}
+
+.o22{
+
+  width:50px;
+
+  height:60px;
+
+  top:100px;
+
+  left:395px;
+
+}
+
+.o23{
+
+  width:70px;
+
+  height:100px;
+
+  top:60px;
+
+  left:450px;
+
+}
+
+.o24{
+
+  width:90px;
+
+  height:50px;
+
+  top:130px;
+
+  left:525px;
+
+}
+
+.o25{
+
+   width:60px;
+
+  height:30px;
+
+  top:95px;
+
+  left:525px;
+
+}
+
+.o26{
+
+  width:100px;
+
+  height:60px;
+
+  top:185px;
+
+  left:525px;
+
+}
+
+.o27{
+
+  width:90px;
+
+  height:50px;
+
+  top:250px;
+
+  left:525px;
+
+}
+
+.o28{
+
+  width:50px;
+
+  height:50px;
+
+  top:305px;
+
+  left:525px;
+
+}  
+
+.outer:hover{
+
+  transform: scaleX(1.1) scaleY(1.1);
+
+}  
