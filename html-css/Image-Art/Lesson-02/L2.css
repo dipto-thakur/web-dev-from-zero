@@ -1,0 +1,186 @@
+.outer{
+
+  width:650px;
+
+  height:520px;
+
+  background-color:#1B1B1B; 
+
+  position:relative;
+
+  top:5%;
+
+  left:5%;
+
+}
+
+
+.box{
+
+  width:450px;
+
+  height:400px;
+
+  position:absolute;
+
+  top:60px;
+
+  left:150px;
+
+}
+
+.CircleWrap{
+
+  position:relative;
+
+}
+
+.circle{  
+
+  border-radius:100%;
+
+  position:absolute;  
+
+  border:5px solid #1B1B1B;
+
+}
+
+.circleS{
+
+  width:60px;
+
+  height:60px;
+
+}
+
+.circleM{
+
+  width:100px;
+
+  height:100px;
+
+}
+
+.circleB{
+
+  width:140px;
+
+  height:140px;
+
+}
+
+.c1{
+
+  top:30px;
+
+  left:125px;
+
+}
+
+
+.c2{  
+
+  
+
+  top:50px;
+
+  left:55px;
+
+  z-index:3;
+
+}
+
+.c3{
+
+   top:130px;
+
+   left:55px;
+
+   z-index:1;
+
+}
+
+.c4{  
+
+  
+
+  top:120px;
+
+  left:90px;
+
+  z-index:3;
+
+}
+
+.c5{
+
+  top:170px;
+
+  left:205px;
+
+  z-index:1;
+
+}
+
+.c6{
+
+  top:230px;
+
+  left:100px;
+
+  z-index:1;
+
+}
+
+.c7{
+
+  top:210px;
+
+  left:125px;
+
+  z-index:2;
+
+}
+
+.c8{
+
+  top:280px;
+
+  left:70px;
+
+  z-index:1;
+
+}
+
+.c9{
+
+  top:320px;
+
+  left:140px;
+
+  z-index:1;
+
+}
+
+  .c10{
+
+  top:360px;
+
+  left:70px;
+
+  z-index:3;
+
+}
+
+img{
+
+  transition:2s;
+
+}
+
+body:hover img{
+
+ filter:grayscale(80%); 
+
+}
+
