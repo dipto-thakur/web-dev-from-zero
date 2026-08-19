@@ -1,0 +1,91 @@
+.img{
+
+  width:150px;
+
+  height:150px;
+
+  margin:6px;
+
+  float:left;
+
+  transition:0.1s;
+
+}
+
+.row{
+
+  clear:both;
+
+}
+
+.i2{
+
+  filter: grayscale(100%);
+
+}
+
+.i3{
+
+  filter:blur(5px);
+
+}
+
+.i4{
+
+  filter: brightness(150%);
+
+}
+
+.i5{
+
+  filter:contrast(151%);
+
+}
+
+.i6{
+
+  filter:hue-rotate(150deg);
+
+}
+
+.i7{
+
+ filter: invert(100%);
+
+}
+
+.i8{
+
+  filter: opacity(0.5);
+
+}
+
+.i9{
+
+  filter:saturate(150%);
+
+}
+
+.i10{
+
+  filter:sepia(80%);
+
+}
+
+.i11{
+
+  filter: contrast(150%);
+
+}
+
+.i12{
+
+  filter: grayscale(60%) opacity(0.4);
+
+}
+
+body:hover img{
+
+  transform:scaleX(-1);
+
+}
