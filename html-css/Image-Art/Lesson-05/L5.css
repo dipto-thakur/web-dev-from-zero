@@ -1,0 +1,156 @@
+
+.img1 {
+
+/**The dimension for images has to be set**/
+
+  width: 100px;
+
+  height: 100px;
+
+  
+
+/**Adust the position**/
+
+  position:absolute;
+
+  top:40px;
+
+  left:100px;
+
+
+/**The image we want to show**/
+
+  background-image: url(https://images.unsplash.com/photo-1528287942171-fbe365d1d9ac?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&w=1200&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+
+  background-size: contain;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  
+
+/**The svg shape we want to create a mask**/
+
+  -webkit-mask-size: 100%; /**Adust the size if the image is not coming properly**/
+
+  -webkit-mask-image:url(https://upload.wikimedia.org/wikipedia/commons/e/ee/Black_Peace_Dove.svg);
+
+  -webkit-mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+
+  transition:2s;
+
+}
+
+
+.img2 {
+
+  width: 200px;
+
+  height: 200px;
+
+  position:absolute;
+
+  top:75px;
+
+  left:115px;
+
+  background-image: url(https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2l0eXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+
+  background-size: contain;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  -webkit-mask-size: 75%;
+
+   -webkit-mask-image:url(https://upload.wikimedia.org/wikipedia/commons/e/ee/Black_Peace_Dove.svg);
+
+  -webkit-mask-repeat: no-repeat;
+
+   -webkit-mask-position: center;
+
+  transition:2s;
+
+}
+
+
+.img3 {
+
+  width: 300px;
+
+  height: 300px;
+
+  position:absolute;
+
+  top:140px;
+
+  left:155px;
+
+  background-image: url(https://img.freepik.com/premium-photo/new-york-city-skyline_119101-84.jpg);
+
+  background-size: contain;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  -webkit-mask-size: 75%;
+
+   -webkit-mask-image:url(https://upload.wikimedia.org/wikipedia/commons/e/ee/Black_Peace_Dove.svg);
+
+  -webkit-mask-repeat: no-repeat;
+
+   -webkit-mask-position: center;
+
+  transition:2s;
+
+}
+
+body:hover .img1{
+
+   width: 300px;
+
+  height: 300px;
+
+   -webkit-mask-size: 75%;
+
+  top:0px;
+
+  left:0px;
+
+  filter:sepia(80%);
+
+}
+
+body:hover .img2{
+
+  top:140px;
+
+  left:180px;
+
+  filter: invert(100%);
+
+}
+
+body:hover .img3{
+
+   width: 100px;
+
+  height: 100px;
+
+  -webkit-mask-size: 100%; 
+
+  top:260px;
+
+  left:330px;
+
+  filter:hue-rotate(150deg);
+
+  
+
+}
+
