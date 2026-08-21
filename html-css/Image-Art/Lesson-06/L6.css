@@ -1,0 +1,111 @@
+.outer{
+
+  width: 300px;
+
+  height: 450px;
+
+  position: relative;
+
+  border: 2px solid grey;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+}
+
+.img1, .img2, .box{
+
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+
+}
+
+.img1{
+
+  width: 100%;
+
+  height: 100%;
+
+  background-image: url(https://images.pexels.com/photos/12720670/pexels-photo-12720670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+}
+
+.box{
+
+   width: 50%;
+
+   height: 100%;
+
+   background-color: rgba(135, 206, 235, 0.7);
+
+   position: absolute;
+
+   top: 0px;
+
+   right: 0px;
+
+   backdrop-filter: blur(4px);
+
+}
+
+.img2{
+
+    width: 100%;
+
+    height: 100%;
+
+    background-image: url(https://images.pexels.com/photos/12720670/pexels-photo-12720670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    filter: brightness(120%) saturate(3);
+
+    mask-size: 125%;
+
+    mask-image: url(https://res.cloudinary.com/dvjdmamcc/image/upload/v1695974427/Game_On1_ajklfr.svg);
+
+    mask-repeat: no-repeat;
+
+    mask-position: left;
+
+}
+
+.outer:hover .img1 {
+
+     transform: scale(1.05);
+
+     filter: grayscale(40%);
+
+}
+
+.outer:hover .box {
+
+     transform: translateX(-10%);
+
+     background-color: rgba(135, 206, 235, 0.9);
+
+}
+
+.outer:hover .img2 {
+
+     transform: scale(1.1);
+
+     filter: brightness(150%) saturate(2.5);
+
+}
