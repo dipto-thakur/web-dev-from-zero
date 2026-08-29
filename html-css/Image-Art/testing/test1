@@ -1,1 +1,93 @@
-dtwydyguygdsb
+// components/layout/footer.tsx
+"use client";
+import { useEffect, useRef, useState } from "react";
+import { siteConfig } from "@/lib/siteConfig";
+import { cn } from "@/lib/cn";
+import { GithubIcon } from "@/components/icons/github-icon";
+import { MailIcon } from "@/components/icons/mail-icon";
+import { InstagramIcon } from "@/components/icons/instagram-icon";
+
+const LINK_CLASS = cn(
+  "inline-flex size-9 items-center justify-center rounded-full",
+  "text-ink-faint",
+  "outline-none ring-0",
+  "transition-colors duration-150",
+  "hover:bg-surface-2 hover:text-ink",
+  "focus-visible:ring-2 focus-visible:ring-ink/15",
+  "active:opacity-60"
+);
+
+export function Footer() {
+  const [visible, setVisible] = useState(false);
+  const sentinelRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const node = sentinelRef.current;
+    if (!node) return;
+
+    // IntersectionObserver instead of a scroll-position threshold —
+    // window.scrollY is unreliable on mobile (address-bar collapse
+    // shifts it with no real scroll, and it breaks entirely if the
+    // actual scroll container ever isn't `window`). Revealing 120px
+    // before the sentinel actually enters view also means this works
+    // regardless of total page length, unlike a fixed pixel count.
+    const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting), {
+      rootMargin: "0px 0px 120px 0px",
+      threshold: 0,
+    });
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <>
+      {/* 1px marker placed right before the footer in normal document flow. */}
+      <div ref={sentinelRef} aria-hidden className="h-px w-full" />
+
+      <footer
+        aria-hidden={!visible}
+        className={cn(
+          "border-t border-border/70 px-4 pt-5",
+          "pb-[max(1.5rem,env(safe-area-inset-bottom))]",
+          "transition-[opacity,transform] duration-300 ease-out",
+          visible ? "opacity-100 translate-y-0" : "pointer-events-none -translate-y-1 opacity-0"
+        )}
+      >
+        <div className="mx-auto flex flex-col items-center gap-3">
+          <p className="text-center text-[0.72rem] leading-4 text-ink-faint">
+            Built by <span className="font-medium text-ink-muted">{siteConfig.creatorname}</span>
+          </p>
+
+          <nav aria-label="Social and contact links" className="flex items-center gap-0.5">
+            
+              href={`https://github.com/${siteConfig.github}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${siteConfig.creatorname} on GitHub`}
+              className={LINK_CLASS}
+            >
+              <GithubIcon />
+            </a>
+            
+              href={`mailto:${siteConfig.email}`}
+              aria-label={`Email ${siteConfig.creatorname}`}
+              className={LINK_CLASS}
+            >
+              <MailIcon />
+            </a>
+            
+              href={`https://instagram.com/${siteConfig.insta}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Instagram ${siteConfig.creatorname}`}
+              className={LINK_CLASS}
+            >
+              <InstagramIcon />
+            </a>
+          </nav>
+        </div>
+      </footer>
+    </>
+  );
+}
