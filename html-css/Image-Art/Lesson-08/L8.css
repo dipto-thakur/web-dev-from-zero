@@ -1,0 +1,119 @@
+.outer{
+
+  width:600px;
+
+   height:500px;
+
+}
+
+.box{
+
+  width:100px;
+
+   height:300px;
+
+  float:left;
+
+  background-image: url("https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+  background-size:600px 500px;
+
+  margin:3px;
+
+  transition:2s;
+
+}
+
+.b1{
+
+  background-position:0% 30%;
+
+}
+
+.b2{
+
+  background-position:20% 0%;
+
+}
+
+.b3{
+
+  background-position:40% 30%;
+
+}
+
+.b4{
+
+  background-position:60% 10%;  
+
+}
+
+.b5{
+
+  background-position:80% 30%;
+
+}
+
+.T100{
+
+  border-top:100px solid #C7DADF;
+
+}
+
+.T150{
+
+  border-top:150px solid #C7DADF;
+
+}
+
+.B100{
+
+  border-bottom:100px solid #C7DADF;
+
+}
+
+.B150{
+
+  border-bottom:150px solid #C7DADF;
+
+}
+
+.b1:hover{
+
+  filter: contrast(150%);
+
+  transform: scaleX(1.1) scaleY(1.1);
+
+}
+
+.b2:hover{
+
+  filter: brightness(130%);
+
+  transform: scaleX(1.1) scaleY(1.1);
+
+}
+
+.b3:hover{
+
+  filter: contrast(150%);
+
+  transform: scaleX(1.1) scaleY(1.1);
+
+}
+
+.b4:hover{
+
+  filter: brightness(130%);
+
+  transform: scaleX(1.1) scaleY(1.1);
+
+}
+
+.b5:hover{
+
+  filter: contrast(150%);
+
+  transform: scaleX(1.1) scaleY(1.1);
+
+}
